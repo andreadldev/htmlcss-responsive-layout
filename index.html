@@ -7,7 +7,7 @@
     <title>Responsive layout</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="debug">
     <!-- HEADER -->
     <header>
         <div class="container">
@@ -31,21 +31,21 @@
         <!-- SEZIONE 1: HIGHLIGHTS -->
         <section class="highlights">
             <div class="container">
-                <div class="row">
+                <div class="row flex justify-space-between">
                     <div class="col">
-                        <div class="card-debug">CARD DEBUG</div>
+                        <div class="card-inner">CARD DEBUG</div>
                     </div>
                     <div class="col">
-                        <div class="card-debug">CARD DEBUG</div>
+                        <div class="card-inner">CARD DEBUG</div>
                     </div>
                     <div class="col">
-                        <div class="card-debug">CARD DEBUG</div>
+                        <div class="card-inner">CARD DEBUG</div>
                     </div>
                     <div class="col">
-                        <div class="card-debug">CARD DEBUG</div>
+                        <div class="card-inner">CARD DEBUG</div>
                     </div>
                     <div class="col">
-                        <div class="card-debug">CARD DEBUG</div>
+                        <div class="card-inner">CARD DEBUG</div>
                     </div>
                 </div>
             </div>
@@ -60,13 +60,52 @@
                         <h3>Titolo</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugit hic dolores cupiditate quaerat quidem illum non doloribus labore, expedita tenetur vitae autem temporibus quibusdam repudiandae fuga assumenda aspernatur reiciendis!</p>
                     </div>
-                    <div class="col card-debug">
+                    <div class="col card-inner">
                         <h3>Titolo</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugit hic dolores cupiditate quaerat quidem illum non doloribus labore, expedita tenetur vitae autem temporibus quibusdam repudiandae fuga assumenda aspernatur reiciendis!</p>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!-- SEZIONE 3: TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials-heading">
+                    <h4>Testimonials H4</h4>
+                    <h2>Titolo H2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique, ut deserunt enim, nihil ea quam deleniti dolorum sequi optio nulla illum laudantium voluptatibus. Itaque consequatur necessitatibus voluptatibus iste dolore!</p>
+                </div>
+                <div class="col flex-column">
+                    <img src="img/about.jpg" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorem quis rerum laborum magni. Vitae, voluptate laboriosam, molestiae reprehenderit doloribus, quam nesciunt recusandae est expedita hic sunt quaerat facilis culpa.</p>
+                </div>
+                <div class="col flex-column">
+                    <img src="img/about.jpg" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorem quis rerum laborum magni. Vitae, voluptate laboriosam, molestiae reprehenderit doloribus, quam nesciunt recusandae est expedita hic sunt quaerat facilis culpa.</p>
+                </div>
+                <div class="col flex-column">
+                    <img src="img/about.jpg" alt="...">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio dolorem quis rerum laborum magni. Vitae, voluptate laboriosam, molestiae reprehenderit doloribus, quam nesciunt recusandae est expedita hic sunt quaerat facilis culpa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE 4: BENEFITS -->
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-heading flex justify-center">
+                    <h2>Titolo</h2>
+                </div>
+                <div class="row justify-space-between">
+                    <div class="col">01</div>
+                    <div class="col">02</div>
+                    <div class="col">03</div>
+                    <div class="col">04</div>
+                    <div class="col">05</div>
+                    <div class="col">06</div>
+                </div>
+            </div>
         </section>
     </main>
     
