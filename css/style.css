@@ -1,1 +1,27 @@
 @import "reset.css";
+@import "common.css";
+
+/* ==============================
+   ------------HEADER------------ 
+   ============================== */
+
+header {
+    background-color: var(--blue-details);
+    padding: 1.25rem 0;
+    color: white;
+}
+
+.main-nav {
+    display: none;
+}
+
+/* DESKTOP */
+@media screen and ( min-width: 992px ) {
+    .hamburger {
+        display: none;
+    }
+
+    .main-nav {
+        display: block;
+    }
+}
