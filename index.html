@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive layout</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
         <div class="container">
-            <div class="d-flex justify-space-between">
+            <div class="flex justify-space-between">
                 <div class="logo">Logo</div>
                 <button class="hamburger">Menu</button>
                 <nav class="main-nav">
@@ -26,7 +26,48 @@
         </div>
     </header>
 
+    <!-- MAIN -->
     <main>
+        <!-- SEZIONE 1: HIGHLIGHTS -->
+        <section class="highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-debug">CARD DEBUG</div>
+                    </div>
+                    <div class="col">
+                        <div class="card-debug">CARD DEBUG</div>
+                    </div>
+                    <div class="col">
+                        <div class="card-debug">CARD DEBUG</div>
+                    </div>
+                    <div class="col">
+                        <div class="card-debug">CARD DEBUG</div>
+                    </div>
+                    <div class="col">
+                        <div class="card-debug">CARD DEBUG</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE 2: STRATEGIC -->
+        <section class="strategic">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col flex-column">
+                        <img src="img/planning1.png" alt="...">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugit hic dolores cupiditate quaerat quidem illum non doloribus labore, expedita tenetur vitae autem temporibus quibusdam repudiandae fuga assumenda aspernatur reiciendis!</p>
+                    </div>
+                    <div class="col card-debug">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad fugit hic dolores cupiditate quaerat quidem illum non doloribus labore, expedita tenetur vitae autem temporibus quibusdam repudiandae fuga assumenda aspernatur reiciendis!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     
     <footer>

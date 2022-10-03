@@ -11,6 +11,10 @@ header {
     color: white;
 }
 
+header .container {
+padding: 0 2.50rem;
+}
+
 .main-nav {
     display: none;
 }
@@ -23,5 +27,68 @@ header {
 
     .main-nav {
         display: block;
+    }
+}
+
+/* ==============================
+   -------------MAIN------------- 
+   ============================== */
+
+/* ------------SECTION 1: HIGHLIGHTS------------- */
+.card-debug {
+    background-color: aqua;
+    height: 200px;
+}
+
+section.highlights {
+    background-color: beige;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.col {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.highlights .col {
+    width: 100%;
+    margin: .625rem 0;
+}
+
+/* TABLET */
+@media screen and ( min-width: 768px ) {
+
+    .highlights .col {
+        width: calc(100% / 3);
+    }
+
+    .highlights .col:first-child {
+        width: calc( (100% / 3) * 2);
+    }
+}
+
+/* ------------SECTION 2: STRATEGIC------------- */
+
+section.strategic {
+    background-color: purple;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.strategic .col {
+    width: 100%;
+    margin: .625rem 0;
+}
+
+.strategic img {
+    width: 100%;
+    margin: auto;
+}
+
+/* DESKTOP */
+@media screen and ( min-width: 992px ) {
+    .strategic .col {
+        width: 50%;
     }
 }
