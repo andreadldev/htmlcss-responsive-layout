@@ -178,3 +178,70 @@ section.testimonials {
         width: calc(100%/3 - 15px);
     }
 }
+
+/* -----------SECTION 3: ABOUT US------------ */
+
+.debug .about-us .col {
+    border: 2px solid black;
+}
+
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.about-us h2 {
+    color: var(--purple);
+}
+
+.about-us .col {
+    width: 100%;
+}
+
+.about-us img {
+    width: 40%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.about-us button {
+    display: block;
+}
+
+/* TABLET & DESKTOP */
+@media screen and ( min-width: 768px ) {
+    .about-us .container {
+        display: flex;
+    }
+
+    .about-us .col.flex-column {
+        flex-direction: column-reverse;
+    }
+}
+
+.get-started {
+    background-color: var(--purple);
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border: 2px solid black;
+}
+
+/* ==============================
+   ------------FOOTER------------ 
+   ============================== */
+
+footer {
+    background-color: var(--footer);
+    color: lightgray;
+    text-align: center;
+}
+
+footer .container {
+    padding: 40px 0;
+}
+
+footer p:first-child {
+    margin-bottom: 80px;
+}
