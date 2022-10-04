@@ -5,6 +5,7 @@
     padding-right: 1.50rem;
 }
 
+/* FLEX */
 .flex {
     display: flex;
 }
@@ -27,19 +28,51 @@
     flex-wrap: wrap;
 }
 
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* LISTE E LINK */
 .list-inline {
     display: flex;
     list-style: none;
 }
 
-.align-items-end {
-    align-items: flex-end;
+.list-inline * {
+    padding: 0 7px;
 }
 
+.link-white {
+    color: white;
+    text-decoration: none;
+}
+
+.link-white:hover {
+    text-decoration: underline;
+}
+
+/* COLORI */
 :root {
     --blue-bg: #b5ddff;
     --blue-details: #0084fd;
     --purple: #9792e4;
     --orange: #fdc15f;
     --footer: #333333;
+}
+
+/* BOTTONI */
+.btn-white {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.btn-white a {
+    color: black;
 }
