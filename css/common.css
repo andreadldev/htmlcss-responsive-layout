@@ -76,3 +76,15 @@
 .btn-white a {
     color: black;
 }
+
+.btn-blue {
+    background-color: var(--blue-details);
+    border: none;
+    border-radius: 20px;
+    padding: 0.575rem 3rem;
+    cursor: pointer;
+}
+
+.btn-blue a {
+    color: white;
+}

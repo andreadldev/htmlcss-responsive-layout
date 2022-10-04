@@ -1,0 +1,27 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* ==========================================
+   -----------SEZIONE 1: HIGHLIGHTS---------- 
+   ========================================== */
+
+.highlights h4 {
+    font-size: 1.5rem;
+    margin: 1.563rem 0;
+}
+
+.highlights p {
+    color: #5a6e7f;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.063rem;
+    margin-bottom: 1.563rem;
+}
+
+.highlights .btn-blue {
+    letter-spacing: 0.125rem;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+

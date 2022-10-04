@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "common.css";
+@import "typography.css";
 
 /* ==============================
    ------------HEADER------------ 
@@ -68,19 +69,46 @@ header {
 
 /* ------------SECTION 1: HIGHLIGHTS------------- */
 
-.debug .card-inner {
-    height: 200px;
-}
-
 section.highlights {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
-.highlights .col {
-    border: 2px solid black;
+.card-inner {
+    text-align: center;
+}
+
+.card-inner i {
+    font-size: 5rem;
+}
+
+.highlights .card {
     background-color: var(--blue-bg);
     color: var(--blue-details);
+    border-radius: 20px;
+    padding: 30px 20px;
+    padding-bottom: 0;
+}
+
+.highlights .col:first-child i {
+    font-size: 1rem;
+}
+
+.highlights .col:first-child .card-inner {
+    margin-bottom: 40px;
+}
+
+.highlights .col:first-child .card-img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.highlights .col:first-child img {
+    width: 100%;
+    position: relative;
+    top: 5px;
 }
 
 .highlights .col {
@@ -97,15 +125,48 @@ section.highlights {
 
     .highlights .col:first-child {
         width: calc( (100% / 3) * 2 - 7px);
+        padding: 5px 20px;
     }
 
+    .highlights .col:first-child .card-img {
+        position: relative;
+        top: 5px;
+        margin: 0;
+        width: 60%;
+    }
+
+    .highlights .col:first-child .card-inner{
+        text-align: left;
+    }
+}
+
+/* DESKTOP */
+@media screen and ( min-width: 992px ) {
+    .highlights .col:first-child {
+        flex-direction: row;
+    }
+
+    .highlights .col:first-child .card-inner{
+        width: 80%;
+    }
+
+    .highlights .col:first-child .card-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlights .col:first-child img {
+        width: 60%;
+        align-self: flex-end;
+    }
 }
 
 /* ------------SECTION 2: STRATEGIC------------- */
 
 section.strategic {
     background-color: var(--purple);
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
     color: white;
 }
