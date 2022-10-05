@@ -174,33 +174,79 @@ section.strategic {
 .strategic .col {
     width: 100%;
     margin: .625rem 0;
+    /* padding-right: 60px; */
+    text-align: center;
 }
 
-.strategic .card-inner {
+.strategic .card {
+    border-radius: 20px;
+    padding: 30px 20px;
     background-color: white;
     color: black;
 }
 
 .strategic img {
-    width: 100%;
+    width: 80%;
     margin: auto;
+}
+
+.strategic .card-img {
+    width: 100%;
+}
+
+.strategic .card-inner {
+    width: 100%;
+}
+
+.strategic .card-img img {
+    width: 80%;
+}
+
+.arrow-down {
+    background-color: var(--purple);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.arrow-down i {
+    font-size: 20px;
 }
 
 /* DESKTOP */
 @media screen and ( min-width: 992px ) {
-    .strategic .col {
+    .strategic .col:first-child {
         width: 50%;
+        padding-right: 60px;
+        padding-left: 60px;
+        text-align: left;
+    }
+    
+    .strategic img {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .strategic .card-img img {
+        width: 50%;
+        position: relative;
+        top: 20px;
+    }
+
+    .strategic .card {
+        width: 40%;
     }
 }
 
-/* -----------SECTION 2: TESTIMONIALS------------ */
-
-.debug .testimonials-heading {
-    border: 2px solid black;
-}
+/* -----------SECTION 3: TESTIMONIALS------------ */
 
 section.testimonials {
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 50px;
 }
 
@@ -213,8 +259,17 @@ section.testimonials {
 .testimonials .col {
     margin-top: 25px;
     margin-bottom: 20px;
-    min-height: 250px;
+    /* min-height: 250px; */
     background-color: var(--purple);
+}
+
+.testimonials .card {
+    border-radius: 30px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .testimonials .col p {
@@ -222,9 +277,11 @@ section.testimonials {
 }
 
 .testimonials img {
-    width: 40%;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 20px auto;
+    border-radius: 50%;
 }
 
 /* TABLET */
@@ -233,13 +290,16 @@ section.testimonials {
         flex-direction: row;
     }
 
+    .testimonials .card {
+        padding: 20px;
+    }
+
     .testimonials img {
         margin: auto 0;
-        width: 30%;
     }
 }
 
-/* -----------SECTION 3: BENEFITS------------ */
+/* -----------SECTION 4: BENEFITS------------ */
 
 .benefits {
     background-color: var(--purple);
@@ -256,10 +316,14 @@ section.testimonials {
 .benefits .col {
     background-color: white;
     width: 100%;
-    height: 300px;
-    border: 1px solid black;
+    border-radius: 20px;
     margin-bottom: 30px;
     color: black;
+    padding: 20px;
+}
+
+.benefits .col * {
+    margin-bottom: 15px;
 }
 
 /* TABLET */
@@ -276,33 +340,28 @@ section.testimonials {
     }
 }
 
-/* -----------SECTION 3: ABOUT US------------ */
-
-.debug .about-us .col {
-    border: 2px solid black;
-}
+/* -----------SECTION 5: ABOUT US------------ */
 
 .about-us {
     padding-top: 100px;
     padding-bottom: 80px;
 }
 
-.about-us h2 {
-    color: var(--purple);
-}
 
-.about-us .col {
+.about-us .col:first-child {
     width: 100%;
 }
 
 .about-us img {
     width: 40%;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 20px;
+    border-radius: 50%;
 }
 
 .about-us button {
     display: block;
+    margin-top: 20px;
 }
 
 /* TABLET & DESKTOP */
@@ -311,10 +370,22 @@ section.testimonials {
         display: flex;
     }
 
-    .about-us .col.flex-column {
-        flex-direction: column-reverse;
+    .about-us .col {
+        align-items: center;
+    }
+
+    .about-us .col:first-child {
+        width: 120%;
+        padding-right: 50px;
+    }
+
+    .about-us .col:last-child p {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
+
+/* SECTION 6: GET STARTED */
 
 .get-started {
     background-color: var(--purple);
@@ -322,7 +393,6 @@ section.testimonials {
     color: white;
     padding-top: 70px;
     padding-bottom: 70px;
-    border: 2px solid black;
 }
 
 /* ==============================

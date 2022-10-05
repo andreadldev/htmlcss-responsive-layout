@@ -2,6 +2,10 @@
     font-family: 'PT Sans', sans-serif;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /* ==========================================
    -----------SEZIONE 1: HIGHLIGHTS---------- 
    ========================================== */
@@ -14,7 +18,6 @@
 .highlights p {
     color: #5a6e7f;
     font-weight: bold;
-    line-height: 1.5;
     font-size: 1.063rem;
     margin-bottom: 1.563rem;
 }
@@ -25,3 +28,109 @@
     font-size: 1.05rem;
 }
 
+/* ==========================================
+   -----------SEZIONE 2: STRATEGIC---------- 
+   ========================================== */
+
+.strategic h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 35px
+}
+
+.strategic h4 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.strategic .card-inner p {
+    font-style: italic;
+}
+
+/* TABLET */
+@media screen and ( min-width: 768px ) {
+
+    .strategic h3 {
+        font-size: 60px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and ( min-width: 992px ) {
+
+    .strategic h3 {
+        font-size: 35px;
+    }
+
+}
+
+/* ==========================================
+   ----------SEZIONE 3: TESTIMONIALS--------- 
+   ========================================== */
+
+.testimonials h2 {
+    color: var(--purple);
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.testimonials span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonials span:last-child {
+    margin-top: 20px;
+    display: block;
+}
+
+@media screen and ( min-width: 768px ) {
+
+    .testimonials p {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+}
+
+/* ==========================================
+   ------------SEZIONE 4: BENEFITS----------- 
+   ========================================== */
+
+.benefits h2 {
+    font-size: 35px;
+}
+
+.benefits h3, .benefits h4 {
+    color: var(--purple);
+}
+
+.benefits h3 {
+    font-size: 50px;
+}
+
+.benefits h4 {
+    font-size: 20px;
+}
+
+.benefits .btn-purple {
+    letter-spacing: 0.125rem;
+    font-weight: bold;
+}
+
+/* ==========================================
+   ------------SEZIONE 4: ABOUT US----------- 
+   ========================================== */
+
+.about-us h2 {
+    color: var(--purple);
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+   p.description {
+    color: var(--purple);
+    font-weight: bold;
+    font-size: 25px;
+   }

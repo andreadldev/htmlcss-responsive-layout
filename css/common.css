@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
-.btn-blue a {
-    color: white;
+.btn-purple {
+    background-color: var(--purple);
+    border: none;
+    border-radius: 20px;
+    padding: 0.575rem 3rem;
+    cursor: pointer;
 }
